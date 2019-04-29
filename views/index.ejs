@@ -1,0 +1,9 @@
+<% layout('layout') -%>
+
+<ul>
+  <% data.forEach(function(fileName) { %>
+  <li><a href="/f/<%= fileName %>">
+      <%= fileName %></a></li>
+  <% }); %>
+</ul>
+<a href="/u">Click to upload</a>
